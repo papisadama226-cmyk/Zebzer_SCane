@@ -1,0 +1,32 @@
+{
+  "name": "ZebZer - Scanner de sécurité",
+
+  "short_name": "ZebZer",
+
+  "description": "Analyse les liens reçus et indique leur niveau de sécurité avant ouverture.",
+
+  "start_url": "./index.html",
+
+  "display": "standalone",
+
+  "background_color": "#08111d",
+
+  "theme_color": "#00e676",
+
+  "orientation": "portrait",
+
+  "lang": "fr",
+
+  "categories": [
+    "security",
+    "tools"
+  ],
+
+  "icons": [
+    {
+      "src": "https://i.ibb.co/TxNygrDH/IMG-2377.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
