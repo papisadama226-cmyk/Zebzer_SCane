@@ -1,0 +1,424 @@
+/* =============================
+   ZEBZER STYLE
+============================= */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+body{
+
+    background:#08111d;
+
+    color:white;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+
+
+header{
+
+    text-align:center;
+
+    padding:30px 20px;
+
+}
+
+
+
+
+
+.logo{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:20px;
+
+    object-fit:cover;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+header h1{
+
+    font-size:40px;
+
+    color:#00e676;
+
+}
+
+
+
+header p{
+
+    color:#cbd5e1;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+
+main{
+
+    width:92%;
+
+    max-width:600px;
+
+    margin:auto;
+
+    flex:1;
+
+}
+
+
+
+
+
+.card{
+
+    background:#132133;
+
+    border-radius:20px;
+
+    padding:22px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+}
+
+
+
+
+
+.card h2{
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+
+
+
+
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    border:none;
+
+    outline:none;
+
+    background:#08111d;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+button:hover{
+
+    transform:scale(1.02);
+
+}
+
+
+
+
+
+#scanBtn{
+
+    background:#00e676;
+
+    color:#000;
+
+}
+
+
+
+
+
+#qrBtn{
+
+    background:#2979ff;
+
+    color:white;
+
+}
+
+
+
+
+
+#payBtn{
+
+    background:#ff9800;
+
+    color:white;
+
+}
+
+
+
+
+
+#activateBtn{
+
+    background:#9c27b0;
+
+    color:white;
+
+}
+
+
+
+
+
+
+/* SCORE SECURITE */
+
+
+#score{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    background:#00e676;
+
+    color:#000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:20px auto;
+
+    font-size:35px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+#status{
+
+    text-align:center;
+
+    margin:15px;
+
+}
+
+
+
+
+
+#details{
+
+    color:#cbd5e1;
+
+    line-height:25px;
+
+}
+
+
+
+
+
+/* ABONNEMENTS */
+
+
+.plan{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+
+
+.plan button:nth-child(1){
+
+    background:#607d8b;
+
+    color:white;
+
+}
+
+
+
+.plan button:nth-child(2){
+
+    background:#00c853;
+
+    color:white;
+
+}
+
+
+
+.plan button:nth-child(3){
+
+    background:#2979ff;
+
+    color:white;
+
+}
+
+
+
+.plan button:nth-child(4){
+
+    background:#9c27b0;
+
+    color:white;
+
+}
+
+
+
+
+
+
+#history{
+
+    color:#cbd5e1;
+
+    line-height:25px;
+
+}
+
+
+
+
+
+#paymentMessage,
+
+#accountMessage{
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+
+
+
+
+
+
+footer{
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:500px){
+
+
+header h1{
+
+font-size:32px;
+
+}
+
+
+.card{
+
+padding:18px;
+
+}
+
+
+
+}
