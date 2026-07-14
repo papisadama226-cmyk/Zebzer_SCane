@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZebZer - Scanner de sécurité</title>
+
+<meta name="theme-color" content="#08111d">
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<img 
+src="https://i.ibb.co/TxNygrDH/IMG-2377.png" 
+class="logo" 
+alt="ZebZer"
+>
+
+
+<h1>🛡️ ZebZer</h1>
+
+<p>
+Scanner intelligent de sécurité des liens
+</p>
+
+</header>
+
+
+
+<main>
+
+
+<section class="card">
+
+<h2>🔍 Vérifier un lien</h2>
+
+
+<input
+
+id="urlInput"
+
+type="url"
+
+placeholder="Collez votre lien ici..."
+
+>
+
+
+<button id="scanBtn">
+
+Scanner le lien
+
+</button>
+
+
+
+<button id="qrBtn">
+
+📷 Scanner QR Code
+
+</button>
+
+
+</section>
+
+
+
+
+<section class="card result">
+
+
+<h2>Résultat de sécurité</h2>
+
+
+<div id="score">
+
+0%
+
+</div>
+
+
+
+<h3 id="status">
+
+En attente d'analyse
+
+</h3>
+
+
+
+<p id="details">
+
+Collez un lien pour commencer l'analyse.
+
+</p>
+
+
+</section>
+
+
+
+
+
+<section class="card">
+
+
+<h2>📜 Historique</h2>
+
+
+<div id="history">
+
+Aucune analyse enregistrée.
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>⭐ Abonnement ZebZer</h2>
+
+
+<div class="plan">
+
+
+<button onclick="choosePlan('FREE')">
+
+🆓 Essai
+
+<br>
+
+15 analyses
+
+</button>
+
+
+
+<button onclick="choosePlan('NORMAL')">
+
+🟢 Normal
+
+<br>
+
+500 FCFA
+
+<br>
+
+200 analyses
+
+</button>
+
+
+
+
+<button onclick="choosePlan('PRO')">
+
+🔵 Pro
+
+<br>
+
+1000 FCFA
+
+<br>
+
+1000 analyses
+
+</button>
+
+
+
+
+
+<button onclick="choosePlan('ELITE')">
+
+🟣 Elite
+
+<br>
+
+1500 FCFA
+
+<br>
+
+5000 analyses
+
+</button>
+
+
+
+</div>
+
+
+
+
+<button id="payBtn">
+
+💳 Payer via Fineo Pay
+
+</button>
+
+
+
+<input
+
+id="activationCode"
+
+placeholder="Entrer votre code d'activation"
+
+>
+
+
+<button id="activateBtn">
+
+✅ Activer abonnement
+
+</button>
+
+
+
+<p id="paymentMessage"></p>
+
+
+</section>
+
+
+
+
+
+<section class="card">
+
+
+<h2>👤 Compte</h2>
+
+
+<input
+
+id="email"
+
+placeholder="Email"
+
+>
+
+
+<input
+
+id="password"
+
+type="password"
+
+placeholder="Mot de passe"
+
+>
+
+
+<button id="registerBtn">
+
+Créer un compte
+
+</button>
+
+
+
+<button id="loginBtn">
+
+Connexion
+
+</button>
+
+
+
+<p id="accountMessage"></p>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+ZebZer © 2026
+
+<br>
+
+Protection intelligente des liens
+
+</footer>
+
+
+
+
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="scanner.js"></script>
+<script type="module" src="auth.js"></script>
+<script type="module" src="subscription.js"></script>
+<script type="module" src="payment.js"></script>
+<script type="module" src="app.js"></script>
+
+
+
+
+<script>
+
+if("serviceWorker" in navigator){
+
+navigator.serviceWorker.register(
+"service-worker.js"
+);
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
